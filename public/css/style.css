@@ -1,0 +1,15 @@
+body {
+  background: url(http://modernlensmagazine.com/wp-content/uploads/2015/02/female-travel-photographer.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*font stuff*/
+  font-family: sans-serif;
+  color: rgb(92, 35, 10);
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: rgb(92, 35, 10);
+}
