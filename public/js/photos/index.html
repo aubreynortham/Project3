@@ -1,0 +1,17 @@
+<h2>Photos</h2>
+
+<div data-ng-repeat="photo in PhotoIndexViewModel.photos">
+  <img class="smallpics" data-ng-src="{{ photo.photo_url}}"><br>
+  <a data-ui-sref="photoShow({id: photo.$id})">{{photo.location}}</a><br>
+  <p data-ui-sref="photoShow({id: photo.$id})">{{photo.comment}}</p>
+  <button data-ng-click="PhotoIndexViewModel.delete(photo)">Delete</button>
+</div>
+
+<h2>Upload Photo</h2>
+
+<form data-ng-submit="PhotoIndexViewModel.create()">
+  <input placeholder="Location" data-ng-model="PhotoIndexViewModel.newPhoto.location">
+  <input placeholder="Photo URL" data-ng-model="PhotoIndexViewModel.newPhoto.photo_url">
+  <input placeholder="Comment" data-ng-model="PhotoIndexViewModel.newPhoto.comment">
+  <button type="submit">Upload Photo</button>
+</form>
