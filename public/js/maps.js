@@ -50,7 +50,7 @@ var cities = [
           ];
 
           //Angular App Module and Controller
-          var sampleApp = angular.module('mapsApp', []);
+          var sampleApp = angular.module('Picstory', []);
           sampleApp.controller('MapCtrl', function ($scope) {
 
               var mapOptions = {
