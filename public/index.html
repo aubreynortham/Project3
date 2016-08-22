@@ -36,14 +36,6 @@
     <h1><a data-ui-sref="Welcome">Picstory</a></h1>
   </header>
 
-  <div ng-controller="MapCtrl">
-      <div id="map"></div>
-      <div id="repeat" ng-repeat="marker in markers | orderBy : 'title'">
-           <a id="country_container" href="#" ng-click="openInfoWindow($event, marker)">
-           <label id="names" >{{marker.title}}</label></a>
-      </div>
-  </div>
-
   <main data-ui-view></main>
 </body>
 </html>
