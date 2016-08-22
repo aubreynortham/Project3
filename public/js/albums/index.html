@@ -2,27 +2,37 @@
 
 
 
+<div ng-controller='MyCtrl'>
+  <div data-ng-repeat="album in AlbumIndexViewModel.albums">
+    <p>{{ album.album_title}}</p>
+    <a data-ui-sref="albumShow({id: album.$id})"><img class="thumbnail" ng-click='toggleModal()' data-ng-src="{{ album.photos[0].photo_url}}"></a>
+  </div>
 
-<div data-ng-repeat="album in AlbumIndexViewModel.albums">
-  <p>{{ album.album_title}}</p>
-  <a data-ui-sref="albumShow({id: album.$id})"><img data-ng-src="{{ album.photos[0].photo_url}}"></a>
+  <modal-dialog show='modalShown' width='90%' height='auto'>
+      <p>Modal Content Goes here<p>
+    </modal-dialog>
+
+
 </div>
+
 
 <div ng-controller="MapCtrl">
   <div id="map">
     <div id="repeat" ng-repeat="marker in markers | orderBy : 'title'">
       <a id="country_container" href="#" ng-click="openInfoWindow($event, marker)">
-        <label id="names" >{{marker.title}}</label></a>
-      </div>
+        <label id="names" >{{marker.title}}</label>
+      </a>
     </div>
   </div>
+</div>
 
 
 
-  <h2>Upload</h2>
 
-  <form data-ng-submit="AlbumIndexViewModel.create()">
-    <input placeholder="Location" data-ng-model="AlbumIndexViewModel.newAlbum.album_title">
-    <input placeholder="Photo URL" data-ng-model="AlbumIndexViewModel.newAlbum.photo_url">
-    <button type="submit">Upload</button>
-  </form>
+<h2>Upload</h2>
+
+<form data-ng-submit="AlbumIndexViewModel.create()">
+  <input placeholder="Location" data-ng-model="AlbumIndexViewModel.newAlbum.album_title">
+  <input placeholder="Photo URL" data-ng-model="AlbumIndexViewModel.newAlbum.photo_url">
+  <button type="submit">Upload</button>
+</form>
