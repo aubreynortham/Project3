@@ -5,12 +5,20 @@
   .module("Picstory", [
     "ui.router",
     "albums",
-    "firebase"
+    "firebase",
+    "uiGmapgoogle-maps"
   ])
   .config([
     "$stateProvider",
     RouterFunction
-  ]);
+  ])
+  .config(function(uiGmapGoogleMapApiProvider) {
+    uiGmapGoogleMapApiProvider.configure({
+        key: "AIzaSyAmgLKNyifrTtKdg9ndThEdRTopEWeAmDw",
+        v: '3.20', //defaults to latest 3.X anyhow
+        libraries: 'places',
+    });
+})
 
   function RouterFunction($stateProvider){
     $stateProvider

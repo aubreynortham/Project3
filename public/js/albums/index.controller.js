@@ -5,11 +5,12 @@
   .module("albums")
   .controller("AlbumIndexController", [
     "$firebaseArray",
-    "$firebaseObject",
+    "$scope",
+    // "$firebaseObject",
     AlbumIndexControllerFunction
   ]);
 
-  function AlbumIndexControllerFunction($firebaseArray){
+  function AlbumIndexControllerFunction($firebaseArray, $scope){
     var vm = this;
     var ref = firebase.database().ref().child("albums");
     vm.albums = $firebaseArray(ref);
@@ -25,8 +26,12 @@
         $state.go("showIndex", {}, {reload: true});
       })
     }
-  }
+    $scope.map = {center: {
+      latitude: 18,
+      longitude: -30},
+      zoom: 3,
+    }
 
-
+    }
 
 }());
