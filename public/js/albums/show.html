@@ -2,16 +2,17 @@
 <h2>Showing all photos in this album:</h2>
 
 <div data-ng-repeat="photo in AlbumShowViewModel.album.photos">
-  <p>Timestamp: {{AlbumShowViewModel.album.photos.timestamp}}</p>
-  <!-- <p>Comment: {{AlbumShowViewModel.album.photos.comment}}</p> -->
+  <p>Timestamp: {{photo.timestamp}}</p>
+  <p>Comment: {{photo.comment}}</p>
   <img data-ng-src="{{photo.photo_url}}">
-</div>
 
-<h3>Edit</h3>
-<!-- move into ng-repeat, use $index  -->
-<form data-ng-submit="AlbumShowViewModel.update()">
-  <input value="Timestamp" data-ng-model="AlbumShowViewModel.album.photos[0].timestamp">
-  <input value="Comment" data-ng-model="AlbumShowViewModel.album.photos[0].comment">
-  <input value="Photo URL" data-ng-model="AlbumShowViewModel.album.photos[0].photo_url">
-  <button type="submit">Update</button>
-</form>
+  <!-- edit forms -->
+  <h3>Edit</h3>
+  <form data-ng-submit="AlbumShowViewModel.update()">
+    <input value="Timestamp" data-ng-model="AlbumShowViewModel.album.photos[$index].timestamp">
+    <input value="Comment" data-ng-model="AlbumShowViewModel.album.photos[$index].comment">
+    <input value="Photo URL" data-ng-model="AlbumShowViewModel.album.photos[$index].photo_url">
+    <button type="submit">Update</button>
+  </form>
+
+</div>
