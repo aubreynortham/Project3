@@ -9,7 +9,7 @@
     AlbumIndexControllerFunction
   ]);
 
-  function AlbumIndexControllerFunction($firebaseArray){
+  function AlbumIndexControllerFunction($firebaseArray, $scope, uiGmapGoogleMapApi){
     var vm = this;
     var ref = firebase.database().ref().child("albums");
     vm.albums = $firebaseArray(ref);
@@ -26,7 +26,8 @@
       })
     }
 
-  }
+  
+}
 
 
 }());
