@@ -1,22 +1,10 @@
 <h2>Albums</h2>
 
 
-
-
 <div data-ng-repeat="album in AlbumIndexViewModel.albums">
   <p>{{ album.album_title}}</p>
-  <a data-ui-sref="albumShow({id: album.$id})"><img data-ng-src="{{ album.photos[0].photo_url}}"></a>
+  <a data-ui-sref="albumShow({id: album.$id})"><img class="thumbnail" data-ng-src="{{ album.photos[0].photo_url}}"></a>
 </div>
-
-<div ng-controller="MapCtrl">
-  <div id="map">
-    <div id="repeat" ng-repeat="marker in markers | orderBy : 'title'">
-      <a id="country_container" href="#" ng-click="openInfoWindow($event, marker)">
-        <label id="names" >{{marker.title}}</label></a>
-      </div>
-    </div>
-  </div>
-
 
 
   <h2>Upload</h2>
