@@ -5,6 +5,7 @@
   .module("albums")
   .controller("AlbumIndexController", [
     "$firebaseArray",
+    "$firebaseObject",
     AlbumIndexControllerFunction
   ]);
 
@@ -26,5 +27,6 @@
     }
 
   }
+
 
 }());

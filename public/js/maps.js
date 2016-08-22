@@ -1,4 +1,4 @@
-[
+var cities = [
   {
     "album_title": "Madrid",
         "photos": [
@@ -26,28 +26,6 @@
 ]
 
 
-//Data
-var cities = [
-              {
-                  city : 'Madrid',
-                  desc : 'A fun night!',
-                  lat : 40.457023,
-                  long : -3.677725
-              },
-              {
-                  city : 'Madrid',
-                  desc : 'A great city!',
-                  lat : 40.415384,
-                  long : -3.707413
-              },
-
-              {
-                  city : 'Barcelona ',
-                  desc : 'A city of art and culture!',
-                  lat : 41.412315,
-                  long : 2.158531
-              }
-          ];
 
           //Angular App Module and Controller
           var sampleApp = angular.module('mapsApp', []);
@@ -66,13 +44,13 @@ var cities = [
               var infoWindow = new google.maps.InfoWindow();
 
               var createMarker = function (info){
-
+                  console.log(info);
                   var marker = new google.maps.Marker({
                       map: $scope.map,
-                      position: new google.maps.LatLng(info.lat, info.long),
-                      title: info.city
+                      position: new google.maps.LatLng(info.photos[0].latitude, info.photos[0].longitude),
+                      title: info.album_title
                   });
-                  marker.content = '<div class="infoWindowContent">' + info.desc + '</div>';
+                  marker.content = '<div class="infoWindowContent">' + '</div>';
 
                   google.maps.event.addListener(marker, 'click', function(){
                       // infoWindow.setContent('<h2>' + marker.title + '</h2>' + marker.content);
