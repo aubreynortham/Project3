@@ -21,6 +21,10 @@
     vm.update = function(){
       vm.album.$save()
     }
+    vm.delete = function(){
+      vm.album.$remove({id: $stateParams.id})
+    }
   }
+
 
 }());

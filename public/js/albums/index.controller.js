@@ -19,13 +19,6 @@
         vm.newAlbum = {};
       });
     }
-
-    vm.delete = function(album){
-      vm.albums.$remove(album).then(function(){
-        $state.go("showIndex", {}, {reload: true});
-      })
-    }
-
   }
 
 
