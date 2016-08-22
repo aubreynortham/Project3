@@ -2,25 +2,25 @@
   {
     "album_title": "Madrid",
         "photos": [
-                    "photo_url": "https://thewildwanderer.files.wordpress.com/2013/06/retiro-park.jpg",
+                    {"photo_url": "https://thewildwanderer.files.wordpress.com/2013/06/retiro-park.jpg",
                     "latitude": "40.457023",
                     "longitude": "-3.677725",
-                    "timestamp": "2012-04-23T18:25:43.511Z"
+                    "timestamp": "2012-04-23T18:25:43.511Z"}
                   ]
                   [
-                    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Plaza_Mayor_de_Madrid_06.jpg",
+                    {"photo_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Plaza_Mayor_de_Madrid_06.jpg",
                     "latitude": "40.415384",
                     "longitude": "-3.707413",
-                    "timestamp": "2012-04-23T18:25:43.511Z"
+                    "timestamp": "2012-04-23T18:25:43.511Z"}
                   ]
   },
   {
     "album_title": "Barcelona",
         "photos": [
-                    "photo_url": "http://www.moodychicas.com/wp-content/uploads/2016/01/barcelona.jpg",
+                    {"photo_url": "http://www.moodychicas.com/wp-content/uploads/2016/01/barcelona.jpg",
                     "latitude": "41.412315",
                     "longitude": "2.158531",
-                    "timestamp": "2012-04-25T18:25:43.511Z"
+                    "timestamp": "2012-04-25T18:25:43.511Z"}
                   ]
   },
 ]
