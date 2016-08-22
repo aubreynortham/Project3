@@ -1,62 +1,26 @@
 [
   {
-    "album_id": 1,
-    "location": "Madrid",
-    "photo_url": "http://mividaen.sampere.com/wp-content/uploads/2014/08/Photography-course-in-Madrid.jpg",
-    "comment": "This was my favorite day of the trip, by far. Right after I took this pic, we went to this local dive bar where we ran into Beyonce and played beer pong together until 4AM."
+    "album_title": "Madrid",
+        "photos": [
+                    "photo_url": "https://thewildwanderer.files.wordpress.com/2013/06/retiro-park.jpg",
+                    "latitude": "40.457023",
+                    "longitude": "-3.677725",
+                    "timestamp": "2012-04-23T18:25:43.511Z"
+                  ]
+                  [
+                    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Plaza_Mayor_de_Madrid_06.jpg",
+                    "latitude": "40.415384",
+                    "longitude": "-3.707413",
+                    "timestamp": "2012-04-23T18:25:43.511Z"
+                  ]
   },
   {
-    "album_id": 1,
-    "location": "Madrid",
-    "photo_url": "http://artnectar.com/wp-content/uploads/2010/06/migel_rise_to-fly.png",
-    "comment": "I don't even remember taking this one, weird... It's like I was never on this trip."
+    "album_title": "Barcelona",
+        "photos": [
+                    "photo_url": "http://www.moodychicas.com/wp-content/uploads/2016/01/barcelona.jpg",
+                    "latitude": "41.412315",
+                    "longitude": "2.158531",
+                    "timestamp": "2012-04-25T18:25:43.511Z"
+                  ]
   },
-  {
-    "album_id": 1,
-    "location": "Madrid",
-    "photo_url": "http://images.nationalgeographic.com/wpf/media-live/photos/000/022/cache/madrid-el-escorial_2233_600x450.jpg",
-    "comment": "Isn't this view THE BEST???"
-  },
-  {
-    "album_id": 1,
-    "location": "Madrid",
-    "photo_url": "http://seanwashere.com/wp-content/uploads/2013/11/berlin-street-photography-sean-was-here1.jpg",
-    "comment": "This was my favorite day of the trip, by far. Right after I took this pic, we went to this local dive bar where we ran into Beyonce and played beer pong together until 4AM."
-  },
-  {
-    "album_id": 1,
-    "location": "Madrid",
-    "photo_url": "https://s-media-cache-ak0.pinimg.com/564x/7e/4a/6a/7e4a6aadef1f0d5c77c712afb53c60b2.jpg",
-    "comment": "I don't even remember taking this one, weird... It's like I was never on this trip."
-  },
-  {
-    "album_id": 1,
-    "location": "Madrid",
-    "photo_url": "http://www.urdesignmag.com/wordpress/wp-content/uploads/2016/05/hotel-vincci-the-mint-by-jaime-beriestain-madrid-photo-by-Adolfo-Gosalvez-Photography-6.jpg",
-    "comment": "Isn't this view THE BEST???"
-  },
-  {
-    "album_id": 1,
-    "location": "Madrid",
-    "photo_url": "https://cdn1.360cities.net/pano/gospar2/01193550__DSC3545_Panorama.jpg/equirect_crop_3_1/5.jpg",
-    "comment": "This was my favorite day of the trip, by far. Right after I took this pic, we went to this local dive bar where we ran into Beyonce and played beer pong together until 4AM."
-  },
-  {
-    "album_id": 1,
-    "location": "Madrid",
-    "photo_url": "https://mophotoartist.files.wordpress.com/2014/08/img_1350.jpg?w=490&h=367",
-    "comment": "I don't even remember taking this one, weird... It's like I was never on this trip."
-  },
-  {
-    "album_id": 1,
-    "location": "Madrid",
-    "photo_url": "http://www.urdesignmag.com/wordpress/wp-content/uploads/2016/05/hotel-vincci-the-mint-by-jaime-beriestain-madrid-photo-by-Adolfo-Gosalvez-Photography-15.jpg",
-    "comment": "Isn't this view THE BEST???"
-  },
-  {
-    "album_id": 1,
-    "location": "Madrid",
-    "photo_url": "http://www.rebeccadouglas.co.uk/blog/wp-content/uploads/2016/04/08-40639-post/Madrid-travel-photography-April-2016-1(pp_w590_h393).jpg",
-    "comment": "This was my favorite day of the trip, by far. Right after I took this pic, we went to this local dive bar where we ran into Beyonce and played beer pong together until 4AM."
-  }
 ]
