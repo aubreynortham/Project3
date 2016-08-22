@@ -4,8 +4,8 @@
   angular
   .module("Picstory", [
     "ui.router",
-    "firebase",
-    "albums"
+    "albums",
+    "firebase"
   ])
   .config([
     "$stateProvider",
