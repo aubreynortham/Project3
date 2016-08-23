@@ -20,7 +20,6 @@
     });
 
     vm.create = function(){
-      debugger
       vm.album.photos.push(vm.newPhoto)
       vm.album.$save().then(function(){
         vm.newPhoto = {};
