@@ -13,3 +13,18 @@ a {
   text-decoration: none;
   color: rgb(92, 35, 10);
 }
+
+.thumbnail {
+  max-width: 40%;
+  height: auto;
+}
+.listed_photos {
+  max-width: 60%;
+  height: auto;
+}
+.welcome_header {
+  font-size: 5em;
+}
+.regular_header {
+  font-size: 1.5em;
+}
