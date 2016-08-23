@@ -17,3 +17,7 @@ a {
   max-width: 40%;
   height: auto;
 }
+.listed_photos {
+  max-width: 60%;
+  height: auto;
+}
