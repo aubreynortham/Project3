@@ -23,17 +23,20 @@
 
     })
 
-    vm.create = function(){
-      vm.albums.$add(vm.newAlbum).then(function(){
-        vm.newAlbum = {};
-      });
-    }
+    vm.anotherAlbum = {};
+      vm.create = function(){
+        vm.albums.$add(vm.anotherAlbum);
+        vm.anotherAlbum = {};
+      }
 
-    vm.delete = function(album){
-      vm.albums.$remove(album).then(function(){
-        $state.go("showIndex", {}, {reload: true});
-      })
-    }
+      vm.update = function(album) {
+     vm.albums.$save(album)
+   }
+
+   vm.destroy = function(album) {
+    vm.albums.$remove(album)
+  }
+  
     $scope.map = {
       center: {
         latitude: 38.2,
