@@ -1,10 +1,19 @@
 
 <h2>Showing all photos in this album:</h2>
 
+<h3>Add Photo to this Album</h3>
+<form data-ng-submit="AlbumShowViewModel.create()">
+  <input placeholder="Timestamp" data-ng-model="AlbumShowViewModel.newPhoto.timestamp">
+  <input placeholder="Comment" data-ng-model="AlbumShowViewModel.newPhoto.comment">
+  <input placeholder="Photo URL" data-ng-model="AlbumShowViewModel.newPhoto.photo_url">
+  <button type="submit">Add Photo</button>
+</form>
+
+
 <div data-ng-repeat="photo in AlbumShowViewModel.album.photos">
   <p>Timestamp: {{photo.timestamp}}</p>
   <p>Comment: {{photo.comment}}</p>
-  <img data-ng-src="{{photo.photo_url}}">
+  <img class="listed_photos" data-ng-src="{{photo.photo_url}}">
 
   <!-- edit forms -->
   <h3>Edit</h3>
@@ -15,6 +24,6 @@
     <button type="submit">Update</button>
   </form>
   <!-- delete photo -->
-  <button data-ng-click="AlbumShowViewModel.delete()">Delete</button>
+  <button data-ng-click="AlbumShowViewModel.delete($index)">Delete</button>
 
 </div>

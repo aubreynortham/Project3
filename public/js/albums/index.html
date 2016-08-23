@@ -2,15 +2,22 @@
 
 
 <div data-ng-repeat="album in AlbumIndexViewModel.albums">
-  <p>{{ album.album_title}}</p>
-  <a data-ui-sref="albumShow({id: album.$id})"><img class="thumbnail" data-ng-src="{{ album.photos[0].photo_url}}"></a>
+  <a data-ui-sref="albumShow({id: album.$id})">
+    <p>{{ album.album_title}}</p>
+    <img class="thumbnail" data-ng-src="{{ album.photos[0].photo_url}}">
+  </a>
+  <form>
+    <input value="{{album.album_title}}" data-ng-model="album.album_title">
+    <button type="button" data-ng-click="AlbumIndexViewModel.update(album)">Update</button>
+    <button type="button" data-ng-click="AlbumIndexViewModel.destroy(album)">Delete</button>
+  </form>
 </div>
 
 
-  <h2>Upload</h2>
+  <h2>Create a New Album</h2>
 
   <form data-ng-submit="AlbumIndexViewModel.create()">
-    <input placeholder="Location" data-ng-model="AlbumIndexViewModel.newAlbum.album_title">
-    <input placeholder="Photo URL" data-ng-model="AlbumIndexViewModel.newAlbum.photo_url">
-    <button type="submit">Upload</button>
+    <p>Give your album a title! Once it's saved, click on your album title to begin adding your photos.</p>
+    <input placeholder="Title" data-ng-model="AlbumIndexViewModel.anotherAlbum.album_title">
+    <button type="submit">Save</button>
   </form>
