@@ -2,7 +2,7 @@
 
 (function(){
   angular
-  .module("albums", [
+  .module("photos", [
     "firebase"
   ]);
 }());

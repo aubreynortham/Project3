@@ -1,0 +1,16 @@
+<div id="showphoto">
+  <h2>Photo:</h2>
+
+  <p>Location: {{PhotoShowViewModel.photo.location}}</p>
+  <p>Comment: {{PhotoShowViewModel.photo.comment}}</p>
+  <img class="smallpics" data-ng-src="{{PhotoShowViewModel.photo.photo_url}}"><br>
+
+
+  <h3>Edit</h3>
+  <form data-ng-submit="PhotoShowViewModel.update()">
+    <input value="Location" data-ng-model="PhotoShowViewModel.photo.location">
+    <input value="Comment" data-ng-model="PhotoShowViewModel.photo.comment">
+    <input value="Photo URL" data-ng-model="PhotoShowViewModel.photo.photo_url">
+    <button type="submit">Update</button>
+  </form>
+</div>

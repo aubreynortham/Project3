@@ -2,23 +2,15 @@
 
 (function(){
   angular
-  .module("Picstory", [
+  .module("PLACEHOLDER", [
     "ui.router",
-    "albums",
     "firebase",
-    "uiGmapgoogle-maps"
+    "photos"
   ])
   .config([
     "$stateProvider",
     RouterFunction
-  ])
-  .config(function(uiGmapGoogleMapApiProvider) {
-    uiGmapGoogleMapApiProvider.configure({
-        key: "AIzaSyAmgLKNyifrTtKdg9ndThEdRTopEWeAmDw",
-        v: '3.20', //defaults to latest 3.X anyhow
-        libraries: 'places',
-    });
-})
+  ]);
 
   function RouterFunction($stateProvider){
     $stateProvider
@@ -26,17 +18,17 @@
       url: "",
       templateUrl: "js/welcome.html"
     })
-    .state("albumIndex", {
-      url: "/albums",
-      templateUrl: "js/albums/index.html",
-      controller: "AlbumIndexController",
-      controllerAs: "AlbumIndexViewModel"
+    .state("photoIndex", {
+      url: "/photos",
+      templateUrl: "js/photos/index.html",
+      controller: "PhotoIndexController",
+      controllerAs: "PhotoIndexViewModel"
     })
-    .state("albumShow", {
-      url: "/albums/:id",
-      templateUrl: "js/albums/show.html",
-      controller: "AlbumShowController",
-      controllerAs: "AlbumShowViewModel"
+    .state("photoShow", {
+      url: "/photos/:id",
+      templateUrl: "js/photos/show.html",
+      controller: "PhotoShowController",
+      controllerAs: "PhotoShowViewModel"
     });
   }
 }());
