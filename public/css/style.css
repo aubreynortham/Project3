@@ -19,6 +19,4 @@ a {
   height: auto;
 }
 
-#map {
-  height: 400px;
-}
+.angular-google-map-container { height: 400px; }
