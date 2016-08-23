@@ -17,6 +17,7 @@
     var syncObject = $firebaseObject(ref);
     syncObject.$loaded().then(function(album){
       vm.album = album
+      console.log(vm.album);
     });
 
     vm.create = function(){
