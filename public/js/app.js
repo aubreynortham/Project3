@@ -2,10 +2,10 @@
 
 (function(){
   angular
-  .module("Picstory", [
+  .module("PLACEHOLDER", [
     "ui.router",
-    "albums",
-    "firebase"
+    "firebase",
+    "photos"
   ])
   .config([
     "$stateProvider",
@@ -18,17 +18,17 @@
       url: "",
       templateUrl: "js/welcome.html"
     })
-    .state("albumIndex", {
-      url: "/albums",
-      templateUrl: "js/albums/index.html",
-      controller: "AlbumIndexController",
-      controllerAs: "AlbumIndexViewModel"
+    .state("photoIndex", {
+      url: "/photos",
+      templateUrl: "js/photos/index.html",
+      controller: "PhotoIndexController",
+      controllerAs: "PhotoIndexViewModel"
     })
-    .state("albumShow", {
-      url: "/albums/:id",
-      templateUrl: "js/albums/show.html",
-      controller: "AlbumShowController",
-      controllerAs: "AlbumShowViewModel"
+    .state("photoShow", {
+      url: "/photos/:id",
+      templateUrl: "js/photos/show.html",
+      controller: "PhotoShowController",
+      controllerAs: "PhotoShowViewModel"
     });
   }
 }());
