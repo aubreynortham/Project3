@@ -14,6 +14,14 @@
     var vm = this;
     var ref = firebase.database().ref().child("albums");
     vm.albums = $firebaseArray(ref);
+    vm.albums.$loaded().then(function(){
+      angular.forEach(vm.albums, function(album) {
+            console.log( album );
+            console.log( album.photos );
+            console.log( album.photos.val(0) );
+        })
+
+    })
 
     vm.create = function(){
       vm.albums.$add(vm.newAlbum).then(function(){
@@ -27,45 +35,27 @@
       })
     }
     $scope.map = {
-    center: {
+      center: {
         latitude: 38.2,
         longitude: -98.5795
-    },
-    zoom: 4
-};
-var mapPins = firebase.database().ref();
-$scope.userInput = '';
-
-$scope.markers = $firebaseArray(mapPins);
+      },
+      zoom: 4
+    };
 
 
-$scope.events = {
-    click: function (map, eventName, handlerArgs) {
-        if ($scope.userInput == '' || $scope.userInput == undefined) {
-                console.log($scope.userInput)
-                return alert("Please fill out a form before placing a marker");
-            }
-        $scope.$apply(function() {
-            //console.log($scope.markers)
-            //console.log(handlerArgs)
-
-            $scope.markers.$add({
-                id: $scope.markers.length,
-                latitude: handlerArgs[0].latLng.lat(),
-                longitude: handlerArgs[0].latLng.lng(),
-                showWindow: true,
-                title: $scope.userInput,
-                options: {
-                    animation: api.Animation.DROP,
-                    title: handlerArgs[0].latLng.toUrlValue(),
-                    disableAutoPan: true
-                }
-            });
-           return $scope.userInput = '';
-        });
+    var mapPins = vm.albums
+    $scope.markers = [mapPins];
+    vm.createMarker = function (album){
+      // console.log(album);
+      var marker = new google.maps.Marker({
+        map: $scope.map,
+        position: new google.maps.LatLng(album.photos[0].latitude, album.photos[0].longitude),
+        title: album.album_title
+      });
     }
-};
 
-};
+    // vm.createMarker(vm.albums["0"])
+
+  };
 
 }());
