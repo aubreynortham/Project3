@@ -15,10 +15,6 @@ a {
   text-decoration: none;
   color: rgb(92, 35, 10);
 }
-.thumbnail {
-  max-width: 40%;
-  height: auto;
-}
 .listed_photos {
   width: 100%;
   height: auto;
@@ -43,4 +39,17 @@ li {
 }
 .editform h3 {
   color: rgb(238, 195, 129);
+}
+input {
+  padding: 5px;
+  background-color: rgba(255, 235, 196, 0.82);
+}
+.albumblocks{
+  display: inline;
+  float: left;
+  text-align: left;
+}
+.thumbnail {
+  max-width: 25%;
+  height: auto;
 }
