@@ -15,15 +15,19 @@
   <p>Comment: {{photo.comment}}</p>
   <img class="listed_photos" data-ng-src="{{photo.photo_url}}">
 
+
+
   <!-- edit forms -->
-  <h3>Edit</h3>
-  <form data-ng-submit="AlbumShowViewModel.update()">
-    <input value="Timestamp" data-ng-model="AlbumShowViewModel.album.photos[$index].timestamp">
-    <input value="Comment" data-ng-model="AlbumShowViewModel.album.photos[$index].comment">
-    <input value="Photo URL" data-ng-model="AlbumShowViewModel.album.photos[$index].photo_url">
-    <button type="submit">Update</button>
-  </form>
-  <!-- delete photo -->
-  <button data-ng-click="AlbumShowViewModel.delete($index)">Delete</button>
+  <div class="editform">
+    <h3>Edit Content</h3>
+    <form data-ng-submit="AlbumShowViewModel.update()">
+      <input value="Timestamp" data-ng-model="AlbumShowViewModel.album.photos[$index].timestamp">
+      <input value="Comment" data-ng-model="AlbumShowViewModel.album.photos[$index].comment">
+      <input value="Photo URL" data-ng-model="AlbumShowViewModel.album.photos[$index].photo_url">
+      <button type="submit">Update</button>
+    </form>
+    <!-- delete photo -->
+    <button data-ng-click="AlbumShowViewModel.delete($index)">Delete</button>
+  </div>
 
 </div>

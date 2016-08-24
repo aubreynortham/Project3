@@ -20,12 +20,27 @@ a {
   height: auto;
 }
 .listed_photos {
-  max-width: 60%;
+  width: 100%;
   height: auto;
+  margin: 0;
 }
 .welcome_header h1 {
   font-size: 10em;
+  margin: 20% 0 0 0;
+  text-shadow: 2px 2px 2px rgb(238, 195, 129);
 }
-.regular_header {
+.welcome h2 {
+  text-shadow: 1px 1px 1px rgb(238, 195, 129);
+}
+li {
   font-size: 1.5em;
+}
+.editform {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.84);
+  margin: 0;
+  padding: 20px;
+}
+.editform h3 {
+  color: rgb(238, 195, 129);
 }

@@ -1,34 +1,34 @@
 
 <h2>Your Albums</h2>
 
+      <div data-ng-repeat="album in AlbumIndexViewModel.albums">
+        <a data-ui-sref="albumShow({id: album.$id})">
+          <p>{{ album.album_title}}</p>
+          <img class="thumbnail" data-ng-src="{{ album.photos[0].photo_url}}">
+        </a>
+        <!-- <p>Lat: {{ album.latitude}}</p> -->
+        <form>
+          <input value="{{album.album_title}}" data-ng-model="album.album_title">
+          <button type="button" data-ng-click="AlbumIndexViewModel.update(album)">Update</button>
+          <button type="button" data-ng-click="AlbumIndexViewModel.destroy(album)">Delete</button>
+        </form>
+      </div>
 
-<div data-ng-repeat="album in AlbumIndexViewModel.albums">
-  <a data-ui-sref="albumShow({id: album.$id})">
-    <p>{{ album.album_title}}</p>
-    <img class="thumbnail" data-ng-src="{{ album.photos[0].photo_url}}">
-  </a>
-  <form>
-    <input value="{{album.album_title}}" data-ng-model="album.album_title">
-    <button type="button" data-ng-click="AlbumIndexViewModel.update(album)">Update</button>
-    <button type="button" data-ng-click="AlbumIndexViewModel.destroy(album)">Delete</button>
-  </form>
+
+<h2>Create a New Album</h2>
+
+<form data-ng-submit="AlbumIndexViewModel.create()">
+  <p>Give your album a title! Once it's saved, click on your album title to begin adding your photos.</p>
+  <input placeholder="Title" data-ng-model="AlbumIndexViewModel.anotherAlbum.album_title">
+  <button type="submit">Save</button>
+</form>
+
+<div id="map">
+  <ui-gmap-google-map
+  center="map.center"
+  zoom="map.zoom"
+  draggable="true"
+  events="map.events">
+  <ui-gmap-marker ng-repeat="marker in map.markers" coords="m.coords" icon="m.icon" idkey="m.id"></ui-gmap-marker>
+</ui-gmap-google-map>
 </div>
-
-
-  <h2>Create a New Album</h2>
-
-  <form data-ng-submit="AlbumIndexViewModel.create()">
-    <p>Give your album a title! Once it's saved, click on your album title to begin adding your photos.</p>
-    <input placeholder="Title" data-ng-model="AlbumIndexViewModel.anotherAlbum.album_title">
-    <button type="submit">Save</button>
-  </form>
-
-  <div id="map">
-        <ui-gmap-google-map
-        center="map.center"
-        zoom="map.zoom"
-        draggable="true"
-        events="map.events">
-        <ui-gmap-marker ng-repeat="marker in map.markers" coords="m.coords" icon="m.icon" idkey="m.id"></ui-gmap-marker>
-        </ui-gmap-google-map>
- </div>
