@@ -5,11 +5,12 @@ body {
   -o-background-size: cover;
   background-size: cover;
   /*font stuff*/
-  font-family: sans-serif;
+  font-family: 'IM Fell Double Pica SC', serif;
   color: rgb(92, 35, 10);
   text-align: center;
   height: 100vh;
 }
+.angular-google-map-container { height: 400px; }
 a {
   text-decoration: none;
   color: rgb(92, 35, 10);
@@ -22,11 +23,9 @@ a {
   max-width: 60%;
   height: auto;
 }
-.welcome_header {
-  font-size: 5em;
+.welcome_header h1 {
+  font-size: 10em;
 }
 .regular_header {
   font-size: 1.5em;
-
-
-.angular-google-map-container { height: 400px; }
+}
