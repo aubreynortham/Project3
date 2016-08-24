@@ -36,7 +36,7 @@
    vm.destroy = function(album) {
     vm.albums.$remove(album)
   }
-  
+
     $scope.map = {
       center: {
         latitude: 38.2,

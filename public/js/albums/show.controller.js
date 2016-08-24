@@ -8,8 +8,7 @@
     "$stateParams",
     "$firebaseObject",
     AlbumShowControllerFunction
-  ]);
-
+  ])
   function AlbumShowControllerFunction($stateParams, $firebaseObject){
     var vm = this;
     var ref = firebase.database().ref().child("albums/" + $stateParams.id);
