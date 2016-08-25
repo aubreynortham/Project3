@@ -1,5 +1,5 @@
 
-<h2>{{AlbumShowViewModel.album.album_title}} Album</h2>
+<h2 class="undernav">{{AlbumShowViewModel.album.album_title}} Album</h2>
 
 <form data-ng-submit="AlbumShowViewModel.create()">
   <h3>Add new photo:
@@ -31,14 +31,4 @@
       <!-- delete photo -->
     </div>
 
-  </div>
-
-  <div id="map">
-    <ui-gmap-google-map
-    center="map.center"
-    zoom="map.zoom"
-    draggable="true"
-    events="map.events">
-    <ui-gmap-marker ng-repeat="marker in map.markers" coords="m.coords" icon="m.icon" idkey="m.id"></ui-gmap-marker>
-  </ui-gmap-google-map>
   </div>
