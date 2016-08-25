@@ -6,18 +6,17 @@ body {
   background-size: cover;
   /*font stuff*/
   font-family: 'IM Fell Double Pica SC', serif;
-  color: rgb(92, 35, 10);
+  color: rgb(69, 23, 8);
   text-align: center;
   height: 100vh;
 }
-.angular-google-map-container { height: 400px; }
-a {
-  text-decoration: none;
-  color: rgb(92, 35, 10);
+p {
+  font-family: 'IM Fell Great Primer', serif;
+  letter-spacing: .1em;
 }
-.thumbnail {
-  max-width: 40%;
-  height: auto;
+.angular-google-map-container {
+  height: 400px;
+  margin: 50px 0 0 0;
 }
 .listed_photos {
   width: 100%;
@@ -29,11 +28,13 @@ a {
   margin: 20% 0 0 0;
   text-shadow: 2px 2px 2px rgb(238, 195, 129);
 }
-.welcome h2 {
-  text-shadow: 1px 1px 1px rgb(238, 195, 129);
+.welcome p {
+  text-shadow: 1px 1px 2px rgb(238, 195, 129);
+  font-size: 1.75em;
 }
 li {
   font-size: 1.5em;
+  color: rgb(92, 35, 10);
 }
 .editform {
   width: 100%;
@@ -43,4 +44,40 @@ li {
 }
 .editform h3 {
   color: rgb(238, 195, 129);
+}
+input {
+  padding: 5px;
+  background-color: rgba(255, 235, 196, 0.82);
+  border-style: 2px solid rgb(92, 35, 10);
+}
+.albumblocks{
+  display: relative;
+  float: left;
+  text-align: left;
+}
+.thumbnail {
+  max-width: 25%;
+  height: auto;
+}
+.photo_content {
+  width: 100%;
+  background-color: rgba(107, 19, 0, 0.86);
+  margin: 50px 0 0 0;
+  padding: 20px;
+  text-align: left;
+}
+.photo_content p, i {
+  color: rgb(238, 195, 129);
+  font-size: 1.5em;
+  text-align: left;
+  display: inline;
+}
+.photo_content i {
+  padding: 0 30px 10px 30px;
+  font-size: 2em;
+}
+a h2 {
+  text-decoration: none;
+  color: rgb(92, 35, 10);
+  margin: 50px 0 0 0;
 }
