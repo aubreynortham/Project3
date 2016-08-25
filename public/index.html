@@ -35,11 +35,16 @@
   firebase.initializeApp(config);
   </script>
   <script src="js/app.js"></script>
+  <script src="js/weather.controller.js"></script>
+  <script src="js/planner.controller.js"></script>
   <script src="js/albums/albums.js"></script>
   <script src="js/albums/index.controller.js"></script>
   <script src="js/albums/show.controller.js"></script>
+  <script src="https://use.fontawesome.com/8c729369f0.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer" rel="stylesheet">
+  <!-- <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet"> -->
 </head>
 
 
@@ -61,21 +66,22 @@
   					<a data-ui-sref="Photography">Travel Photography</a>
   				</li>
   				<li class="dropdown pull-right">
-  					 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown<strong class="caret"></strong></a>
+  					 <a href="" data-toggle="dropdown" class="dropdown-toggle">Menu<strong class="caret"></strong></a>
   					<ul class="dropdown-menu">
   						<li>
-  							<a href="#">Action</a>
+  							<a data-ui-sref="Welcome">Home</a>
   						</li>
+              <li class="divider"></li>
   						<li>
-  							<a href="#">Another action</a>
+  							<a data-ui-sref="albumIndex">Albums</a>
   						</li>
+              <li class="divider"></li>
   						<li>
-  							<a href="#">Something else here</a>
+  							<a data-ui-sref="Planner">Trip Planner</a>
   						</li>
-  						<li class="divider">
-  						</li>
-  						<li>
-  							<a href="#">Separated link</a>
+  						<li class="divider"></li>
+              <li>
+  							<a data-ui-sref="Photography">Travel Photography</a>
   						</li>
   					</ul>
   				</li>

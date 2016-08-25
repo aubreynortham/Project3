@@ -4,7 +4,7 @@
 <div class="albumblocks">
   <div data-ng-repeat="album in AlbumIndexViewModel.albums">
     <a data-ui-sref="albumShow({id: album.$id})">
-      <p>{{ album.album_title}}</p>
+      <h2>{{ album.album_title}}</h2>
       <img class="thumbnail" data-ng-src="{{ album.photos[0].photo_url}}">
     </a>
     <!-- <p>Lat: {{ album.latitude}}</p> -->
@@ -14,15 +14,16 @@
       <button type="button" data-ng-click="AlbumIndexViewModel.destroy(album)">Delete</button>
     </form>
   </div>
-</div>
-
+</div><br>
 
 
 <form data-ng-submit="AlbumIndexViewModel.create()">
   <h2>Create a New Album:</h2>
-  <p>Give your album a title! Once it's saved, click on your album title to begin adding your photos.</p>
-  <input placeholder="Title" data-ng-model="AlbumIndexViewModel.anotherAlbum.album_title">
-  <button type="submit"> + </button>
+  <div class="editform">
+    <h3>Give your album a title! Once it's saved, click on your album title to begin adding your photos.
+    <br><input placeholder="Title" data-ng-model="AlbumIndexViewModel.anotherAlbum.album_title">
+    <button type="submit"> + </button></h3>
+  </div>
 </form>
 
 <div id="map">

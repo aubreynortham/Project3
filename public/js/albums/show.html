@@ -2,30 +2,43 @@
 <h2>{{AlbumShowViewModel.album.album_title}} Album</h2>
 
 <form data-ng-submit="AlbumShowViewModel.create()">
-  <h3>Add new photo: 
-  <input placeholder="Timestamp" data-ng-model="AlbumShowViewModel.newPhoto.timestamp">
-  <input placeholder="Comment" data-ng-model="AlbumShowViewModel.newPhoto.comment">
-  <input placeholder="Photo URL" data-ng-model="AlbumShowViewModel.newPhoto.photo_url">
-  <button type="submit">+</button></h3>
-</form>
+  <h3>Add new photo:
+    <input placeholder="Timestamp" data-ng-model="AlbumShowViewModel.newPhoto.timestamp">
+    <input placeholder="Comment" data-ng-model="AlbumShowViewModel.newPhoto.comment">
+    <input placeholder="Photo URL" data-ng-model="AlbumShowViewModel.newPhoto.photo_url">
+    <button type="submit"> + </button></h3>
+  </form>
 
 
-<div data-ng-repeat="photo in AlbumShowViewModel.album.photos">
-  <p>&#9716;: {{photo.timestamp}}</p>
-  <p>Comment: {{photo.comment}}</p>
-  <img class="listed_photos" data-ng-src="{{photo.photo_url}}">
+  <div data-ng-repeat="photo in AlbumShowViewModel.album.photos">
 
-  <!-- edit forms -->
-  <div class="editform">
-    <h3>Edit Content</h3>
-    <form data-ng-submit="AlbumShowViewModel.update()">
-      <input value="Timestamp" data-ng-model="AlbumShowViewModel.album.photos[$index].timestamp">
-      <input value="Comment" data-ng-model="AlbumShowViewModel.album.photos[$index].comment">
-      <input value="Photo URL" data-ng-model="AlbumShowViewModel.album.photos[$index].photo_url">
-      <button type="submit">Update</button>
-    </form>
-    <!-- delete photo -->
-    <button data-ng-click="AlbumShowViewModel.delete($index)">Delete</button>
+    <div class="photo_content">
+      <i class="fa fa-calendar" aria-hidden="true"></i> <p>{{photo.timestamp}}</p><br>
+      <i class="fa fa-pencil-square-o" aria-hidden="true"></i> <p>{{photo.comment}}</p>
+    </div>
+    <img class="listed_photos" data-ng-src="{{photo.photo_url}}">
+
+    <!-- edit forms -->
+    <div class="editform">
+      <h3>Edit Content</h3>
+      <form data-ng-submit="AlbumShowViewModel.update()">
+        <input value="Timestamp" data-ng-model="AlbumShowViewModel.album.photos[$index].timestamp">
+        <input value="Comment" data-ng-model="AlbumShowViewModel.album.photos[$index].comment">
+        <input value="Photo URL" data-ng-model="AlbumShowViewModel.album.photos[$index].photo_url">
+        <button type="submit">Update</button>
+        <button data-ng-click="AlbumShowViewModel.delete($index)">Delete</button>
+      </form>
+      <!-- delete photo -->
+    </div>
+
   </div>
 
-</div>
+  <div id="map">
+    <ui-gmap-google-map
+    center="map.center"
+    zoom="map.zoom"
+    draggable="true"
+    events="map.events">
+    <ui-gmap-marker ng-repeat="marker in map.markers" coords="m.coords" icon="m.icon" idkey="m.id"></ui-gmap-marker>
+  </ui-gmap-google-map>
+  </div>
