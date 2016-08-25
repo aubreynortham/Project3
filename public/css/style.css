@@ -57,6 +57,9 @@ input {
   background-color: rgba(255, 235, 196, 0.82);
   border-style: 2px solid rgb(92, 35, 10);
 }
+.dark_input {
+  color: rgb(48, 24, 4);
+}
 .albumblocks{
   display: relative;
   float: left;
