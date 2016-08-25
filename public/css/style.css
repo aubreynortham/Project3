@@ -81,6 +81,24 @@ a h2 {
   color: rgb(92, 35, 10);
   margin: 50px 0 0 0;
 }
+h3 a {
+  text-decoration: none;
+  color: rgb(92, 35, 10);
+}
 .undernav {
   margin: 100px 0 0 0;
 }
+#col_bg {
+  background-color: rgba(255, 226, 152, 0.83);
+  border: 2px solid rgb(92, 35, 10);
+  margin: 30px 0 0 0;
+}
+#col_bg li {
+  letter-spacing: .1em;
+  font-size: 1em;
+  text-align: left;
+}
+.tips {
+    text-shadow: .25px .5px 1px rgb(238, 195, 129);
+    font-size: 1.25em;
+  }
