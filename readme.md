@@ -13,8 +13,8 @@ There are a couple features that we would still like to add onto the app. One fe
 ***********************************************************
 
 ### User Stories:
-As a user, I want to tell a story through my pictures
-I want create albums of my photos
-I want and access page to see all albums
-I want to be able to add content and commentary to go with photo
-I want to share with family and friends so they don't have to sit through a slideshow
+As a user, I want to tell a story through my pictures.
+I want create albums of my photos.
+I want and access page to see all albums.
+I want to be able to add content and commentary to go with photo.
+I want to share with family and friends so they don't have to sit through a slideshow.
