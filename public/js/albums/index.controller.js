@@ -39,10 +39,10 @@
 
     $scope.map = {
       center: {
-        latitude: 38.2,
-        longitude: -98.5795
+        latitude: 40.390182,
+        longitude: -2
       },
-      zoom: 4
+      zoom: 7
     };
 
 
