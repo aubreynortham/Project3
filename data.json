@@ -34,6 +34,30 @@
         "latitude": "40.418887",
         "longitude": "-3.697028",
         "timestamp": "August 23, 2016 4:13pm"
+      },
+      {
+        "photo_url": "https://c1.staticflickr.com/3/2557/4078240382_e2e4797948_b.jpg",
+        "latitude": "40.417008",
+        "longitude": "-3.703647",
+        "timestamp": "August 25, 2015 1:54pm"
+      },
+      {
+        "photo_url": "https://c2.staticflickr.com/8/7154/6732769961_bb70191de1_b.jpg",
+        "latitude": "40.419414",
+        "longitude": "-3.692393",
+        "timestamp": "August 25, 2016 1:57pm"
+      },
+      {
+        "photo_url": "https://c1.staticflickr.com/7/6235/6294920585_cfdbb0b7d3_b.jpg",
+        "latitude": "40.457023",
+        "longitude": "-3.72386",
+        "timestamp": "August 25, 2015 2:00pm"
+      },
+      {
+        "photo_url": "https://c1.staticflickr.com/3/2634/3761617441_460c8b385e_b.jpg",
+        "latitude": "40.417237",
+        "longitude": "-3.702113",
+        "timestamp": "August 25, 2016 2:08pm"
       }
     ]
   },
@@ -69,6 +93,64 @@
         "latitude": "41.379899",
         "longitude": "2.181816",
         "timestamp": "August 23, 2016 4:34pm"
+      }
+    ]
+  },
+  {
+    "album_title": "Granada",
+    "photos": [
+      {
+        "photo_url": "https://c2.staticflickr.com/8/7309/8735766249_5460063820_b.jpg",
+        "latitude": "37.174722",
+        "longitude": "-3.595694",
+        "timestamp": "August 25, 2016 1:26pm"
+      },
+      {
+        "photo_url": "https://c2.staticflickr.com/8/7202/7081305085_1ec63b3052_b.jpg",
+        "latitude": "37.173465",
+        "longitude": "-3.599653",
+        "timestamp": "August 25, 2016 1:28pm"
+      },
+      {
+        "photo_url": "https://c2.staticflickr.com/2/1217/5148043273_7eebd5d456_b.jpg",
+        "latitude": "41.41338",
+        "longitude": "2.153263",
+        "timestamp": "August 25, 2016 1:30pm"
+      }
+    ]
+  },
+  {
+    "album_title": "Bilbao",
+    "photos": [
+      {
+        "photo_url": "https://c1.staticflickr.com/5/4072/4714779148_0c25cc52f0_b.jpg",
+        "latitude": "43.269128",
+        "longitude": "-2.933864",
+        "timestamp": "August 25, 2016 1:34pm"
+      },
+      {
+        "photo_url": "https://c2.staticflickr.com/4/3086/2459880544_907c99685f_b.jpg",
+        "latitude": "43.269878",
+        "longitude": "-2.93248",
+        "timestamp": "August 25, 2016 1:38pm"
+      },
+      {
+        "photo_url": "https://c2.staticflickr.com/6/5710/21873178088_6c78bb3ca6_b.jpg",
+        "latitude": "43.263831",
+        "longitude": "-2.932319",
+        "timestamp": "August 25, 2016 1:42pm"
+      },
+      {
+        "photo_url": "https://c1.staticflickr.com/3/2340/2161305625_30365cc09c_b.jpg",
+        "latitude": "43.261581",
+        "longitude": "-2.921934",
+        "timestamp": "August 25, 2016 1:45pm"
+      },
+      {
+        "photo_url": "https://c1.staticflickr.com/1/232/484157634_da2300db10_b.jpg",
+        "latitude": "43.266596",
+        "longitude": "-2.927556",
+        "timestamp": "August 25, 2016 1:49pm"
       }
     ]
   }
